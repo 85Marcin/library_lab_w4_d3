@@ -21,3 +21,8 @@ def select(id):
         result = results[0]
         author = Author(result['name'], result['id'] )
     return author
+
+
+def delete_all():
+    sql = "DELETE FROM authors"
+    run_sql(sql)
